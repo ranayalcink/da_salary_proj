@@ -16,6 +16,7 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import time
 
+# fetch_jobs functions takes keyword, num_pages, and location as arguments. The function opens Glassdoor on Google Chrome and uses its arguments to search jobs.
 
 def fetch_jobs(keyword, num_pages, location):
     options = Options()
@@ -32,7 +33,7 @@ def fetch_jobs(keyword, num_pages, location):
     driver.find_element(By.ID, "HeroSearchButton").click()
     time.sleep(2)
     
-    
+# we are creating lists to save the scraped data.     
     company_name = []
     job_title = []
     salary_est = []
@@ -170,14 +171,16 @@ def fetch_jobs(keyword, num_pages, location):
 
     driver.close()
     df = pd.DataFrame({'company': company_name, 
-    'job title': job_title,
-    'location': location,
-    'job description': job_description,
-    'salary estimate': salary_estimate,
-    'company_size': company_size,
-    'company_type': company_type,
-    'company_sector': company_sector,
-    'company_industry' : company_industry, 'company_founded' : company_founded, 'company_revenue': company_revenue})
+        'job title': job_title,
+        'location': location,
+        'job description': job_description,
+        'salary estimate': salary_estimate,
+        'company_size': company_size,
+        'company_type': company_type,
+        'company_sector': company_sector,
+        'company_industry' : company_industry, 
+        'company_founded' : company_founded, 
+        'company_revenue': company_revenue})
     
 
     df.to_csv(keyword + '.csv')
