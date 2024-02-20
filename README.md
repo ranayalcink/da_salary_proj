@@ -2,6 +2,38 @@
 
 The "Glassdoor Job Listing Scraper" is a Python script designed to automate the process of extracting job listing data from the popular job search platform Glassdoor. It uses the Selenium web automation library to navigate Glassdoor's website, search for job listings based on user-defined criteria, and then extract relevant information from the job postings. This information is subsequently saved in a CSV file for further analysis.
 
+**Skills Utilized:**
+
+- **Web Scraping & Automation:**
+  - Selenium for web scraping, automation, and Chrome web driver configuration.
+  - Time management for script synchronization.
+
+- **Python Scripting & Data Handling:**
+  - Python for data extraction, manipulation, scripting, and error handling.
+  - Pandas for data handling, cleaning, and CSV management.
+
+- **Data Extraction, Parsing, Transformation & Basic Analysis:**
+  - Extracted and transformed job-related information from Glassdoor.
+  - Implemented parsing techniques for HTML elements.
+  - Conducted basic data analysis using Pandas.
+
+- **XPath Usage & Element Selection:**
+  - Efficient use of XPath expressions for element location and selection.
+
+- **Dynamic Scraping, Pagination & Efficiency:**
+  - Developed a dynamic script for scraping multiple pages and navigating pagination.
+  - Configured Chrome options for enhanced efficiency, including window size.
+
+- **Interactions & Automation Scripting:**
+  - Interacted with webpage elements for navigation and triggered actions.
+  - Developed an automated script for systematic data retrieval.
+
+- **File Handling & CSV Export:**
+  - Managed file paths for drivers and CSV export.
+  - Created and managed DataFrames with Pandas.
+
+These combined skills synergistically contributed to the successful execution of the web scraping project, enabling the retrieval, cleaning, and analysis of valuable job-related insights from Glassdoor.
+
 ## Credit
 This script was inspired by and adapted from a tutorial written by Mert Sakarya on Medium titled "Selenium Tutorial: Scraping Glassdoor.com in 10 Minutes." The original tutorial provided valuable insights and code examples for scraping job listings from Glassdoor using Selenium, and it served as a foundational reference for this script.
 
