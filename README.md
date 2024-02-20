@@ -33,3 +33,18 @@ Here's a breakdown of how the code functions and the key steps it performs:
    - The script then creates a pandas DataFrame with the collected data.
    - Finally, it saves this DataFrame as a CSV file, with the filename based on the provided keyword (e.g., "data analyst.csv").
 
+## Data Cleaning Process
+
+- Loaded job data from a CSV file into a Pandas DataFrame.
+- Removed duplicate job listings on Glassdoor based on 'job description' to ensure analysis accuracy.
+- Omitted rows without salary values to focus on salary-related insights.
+- Processed the 'salary estimate' column, handling variations like 'per hour' or 'employer est.'
+- Calculated minimum and maximum salary values, creating an average salary column for analysis.
+- Derived company ratings from the last three characters of the 'company' column.
+- Cleaned company names by removing trailing numerical values.
+- Explored job distribution by location and introduced a new 'age' column based on 'company_founded.'
+- Identified specified keywords within job descriptions, enhancing analysis flexibility.
+- Saved the cleaned data to 'jobs analysis.csv' and tool-related research data to 'tools research.csv.'
+- Simplified job titles into broader categories for clarity.
+- Classified job titles into seniority levels and determined working environments based on descriptions.
+- Explored job distribution across different industries for comprehensive analysis.
